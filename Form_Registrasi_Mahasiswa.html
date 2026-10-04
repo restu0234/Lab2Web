@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi Mahasiswa</title>
+</head>
+<body style="background-color: lightblue;">
+    <audio id="musik" src="Media/Gacor kang.mp3" loop></audio>
+    <button onclick="musik.paused ? musik.play() : musik.pause()">🎵klik agar lebih asik</button>
+
+    <h1 align="center">Formulir Pendaftaran Mahasiswa</h1>
+    
+<form align="center" action="proses_registrasi.php" method="post">
+<fieldset style="width: 300px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); background-color: #f9f9f9;">
+    <legend>Form Registrasi</legend>
+<label for="nama">Nama Lengkap</label><br>
+<input type="text" id="nama" name="nama" required minlength="3" maxlength="100"><br><br>
+<label for="nim">NIM</label><br>
+<input type="text" id="nim" name="nim" required><br><br>
+<label for="Umur">Umur</label><br>
+<input type="number" id="umur" name="umur" required min="17" max="60"><br><br>
+<label for="email">Email</label><br>
+<input type="email" id="email" name="email" required><br><br>
+<label for="password">Password</label><br>
+<input type="password" id="password" name="password" required minlength="6"><br><br>
+<label for="Alamat">Alamat</label><br>
+<textarea id="alamat" name="alamat" rows="5" cols="40"></textarea><br><br>
+<h2>Jenis Kelamin</h2>
+<input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki">
+<label for="laki-laki">Laki-laki</label>
+<input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+<label for="perempuan">Perempuan</label><br><br>
+<H2>Keahlian</H2>
+<input type="checkbox" id="html" name="skill" value="html">
+<label for="html">HTML</label>
+<input type="checkbox" id="css" name="skill" value="css">
+<label for="css">CSS</label>
+<input type="checkbox" id="javascript" name="skill" value="javascript">
+<label for="javascript">JavaScript</label><br><br>
+<select id="prodi" name="prodi" required>
+                        <option value="">Pilih Program Studi</option>
+                        <option value="teknik_informatika">Teknik Informatika</option>
+                        <option value="sistem_informasi">Sistem Informasi</option>
+                        <option value="teknik_industri">Teknik Industri</option>
+</select>
+<br><br>
+<label for="tanggal">Tanggal Lahir</label><br>
+<input type="date" id="tanggal" name="tanggal"><br><br>
+<button type="submit">Daftar</button>
+<button type="reset">Reset</button>
+</fieldset>
+<h2 align="center">Sudah punya akun? <a href="Form Login.html">Login</a></h2>
+</form>
+</body>
+</html>
