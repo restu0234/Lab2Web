@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>   
+</head>
+<body>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+    <h1 align="center" style="display: block; margin:auto ; color: blue; background-color: azure;"><marquee>Login Mahasiswa Universitas Pelita Bangsa</marquee></h1>
+    <form action="proses_login.php" method="post" align="center" style="width: 300px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); background-color: #f9f9f9;">
+        <legend>Silahkan Login</legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Login">
+    </form>
+    <p align="center">Belum punya akun? <a href="Form_Registrasi_Mahasiswa.html">Daftar</a></p>
+</body>
